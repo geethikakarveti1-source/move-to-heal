@@ -1,4 +1,4 @@
-# 🏃‍♂️ Rehab AI — MOVE TO HEAL
+# 🏃‍♂️ REHAB AI — MOVE TO HEAL
 ### *Intelligent At-Home Physical Rehabilitation & Remote Clinician Monitoring Platform*
 
 [![Platform](https://img.shields.io/badge/Platform-Web-blue.svg)](https://github.com)
