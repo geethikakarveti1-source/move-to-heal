@@ -4,7 +4,7 @@
    ========================================================================== */
 
 :root {
-  --background: #090b11;
+  --background:#090b11;
   --surface: rgba(18, 22, 35, 0.65);
   --surface-solid: #121623;
   --surface-hover: rgba(30, 37, 56, 0.85);
@@ -15,11 +15,11 @@
   --foreground-muted: #94a3b8;
   --foreground-dark: #64748b;
   
-  --primary: #6366f1; /* Indigo */
+  --primary: #6366f1; /* Indigo colour */
   --primary-hover: #4f46e5;
   --primary-glow: rgba(99, 102, 241, 0.2);
   
-  --accent: #d946ef; /* Magenta/Pink */
+  --accent: #d946ef; /* Magenta colour/Pink colour*/
   --accent-glow: rgba(217, 70, 239, 0.2);
   
   --emerald: #10b981; /* Green for healthy alignment */
