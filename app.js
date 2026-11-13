@@ -396,8 +396,12 @@ if (selectEl) {
   // ==========================================================================
 
   renderPatientDashboard() {
-    const patient = this.patients.find(p => p.id === this.activePatientId);
-    if (!patient) return;
+   const patient = this.patients.find(p => p.id === this.activePatientId);
+
+if (!patient) {
+    document.getElementById('span-patient-name').innerText = 'No patient selected';
+    return;
+}
 
     // Fill demographic headers
     document.getElementById('span-patient-name').innerText = patient.name;
