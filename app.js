@@ -1,3 +1,4 @@
+
 /* ==========================================================================
    Rehab AI Core Engine (MOVE TO HEAL)
    Pose Tracking, Biomechanical Mathematics, LSTM Simulation & Data Sync
@@ -1157,7 +1158,7 @@ if (selectEl) {
 
     // Right shoulder (x: 0.65, y: 0.35), Right Hip (x: 0.65, y: 0.70)
     const rightElbowX = 0.65 + Math.sin(angleRad) * 0.18;
-    const rightElbowY = 0.65 + Math.cos(angleRad) * 0.18;
+    const rightElbowY = 0.35 + Math.cos(angleRad) * 0.18;
 
     // Wrist continues the arm line outwards
     const leftWristX = leftElbowX - Math.sin(angleRad) * 0.15;
