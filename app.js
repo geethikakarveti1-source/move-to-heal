@@ -1717,7 +1717,7 @@ speak(text) {
     
     // Set struggles flag
     let mainStruggle = 'none';
-    const valgusCount = pLogs.filter(w => w.formFlags.includes('knee_valgus')).length;
+    const valgusCount = pLogs.filter(w => (w.formFlags || []).includes('knee_valgus')).length;
     const speedCount = pLogs.filter(w => w.formFlags.includes('fast_eccentric')).length;
     const romCount = pLogs.filter(w => w.formFlags.includes('incomplete_rom')).length;
     
@@ -1741,8 +1741,8 @@ speak(text) {
     
     let mainStruggle = 'none';
     const valgusCount = pLogs.filter(w => w.formFlags.includes('knee_valgus')).length;
-    const speedCount = pLogs.filter(w => w.formFlags.includes('fast_eccentric')).length;
-    const romCount = pLogs.filter(w => w.formFlags.includes('incomplete_rom')).length;
+    const speedCount = pLogs.filter(w => (w.formFlags || []).includes('fast_eccentric')).length;
+    const romCount = pLogs.filter(w => (w.formFlags || []).includes('incomplete_rom')).length;
     
     if (valgusCount >= speedCount && valgusCount >= romCount && valgusCount > 0) mainStruggle = 'knee_valgus';
     else if (speedCount >= valgusCount && speedCount >= romCount && speedCount > 0) mainStruggle = 'fast_eccentric';
